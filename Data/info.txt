@@ -1,2 +1,3 @@
-https://climate.usu.edu/dataDownload/reports/1279257-hly-report-1615218010.csv
+Weather - https://climate.usu.edu/dataDownload/reports/1279257-hly-report-1615565994.csv
 
+Sample range July 11, 2019 - March 8, 2021
