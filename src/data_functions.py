@@ -44,6 +44,6 @@ if __name__=='__main__':
     logan = astral.LocationInfo(name='Logan, UT', timezone=MST, latitude=lat, longitude=lon)
      # this is how to convert from local time to UTC, which astral expects 
     utcdt = MST.normalize(MST.localize(dt)).astimezone(pytz.utc)
-    za = sun.zenith_and_azimuth(logan.observer, utcdt)
-    el = sun.elevation(logan.observer, utcdt)
+    print(sun.zenith_and_azimuth(logan.observer, utcdt))
+    print(sun.elevation(logan.observer, utcdt))
 
