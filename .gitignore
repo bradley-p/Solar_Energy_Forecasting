@@ -3,6 +3,8 @@
 .idea
 .xml
 *~
+~*
+.~
 
 # python environments
 .env
