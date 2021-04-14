@@ -3,12 +3,31 @@ import astral
 from astral import sun
 import pytz
 from datetime import datetime
+import pandas as pd
+import matplotlib.pyplot as plt
 
 ###
 # File contains methods useful for curating data
 # helps to clean-up the data curating notebook
 # provides method that computes elevation, azimuth, and zenith using astral package
 ## 
+
+def plotRegression(truth, pred):
+    plt.figure(figsize=(10,10))
+    plt.scatter(truth, pred)
+    plt.grid()
+    plt.xlabel("Truth")
+    plt.ylabel("Predicted")
+    plt.title("Truth Plotted against actual value")
+    plt.plot([min(truth),max(truth)], [min(truth),max(truth)], 'r')
+    plt.show()
+    
+def computeAverageError(pred, y):
+    err = []
+    for i in range(len(pred)):
+        err.append(abs((y[i] - pred[i])/(y[i] + 1e-6)))
+
+    return sum(err)/ len(err)
 
 class LoganAstral:
     def __init__(self):
@@ -46,4 +65,3 @@ if __name__=='__main__':
     utcdt = MST.normalize(MST.localize(dt)).astimezone(pytz.utc)
     print(sun.zenith_and_azimuth(logan.observer, utcdt))
     print(sun.elevation(logan.observer, utcdt))
-
