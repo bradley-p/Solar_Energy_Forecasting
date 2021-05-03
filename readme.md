@@ -4,7 +4,8 @@ For Paper detailing this work see <a href="https://www.overleaf.com/read/nybprsn
 For powerpoint presentations see: <a href="https://github.com/bradley-p/Solar_Energy_Forecasting/blob/main/Reports:Notes/" >Reports Folder </a>
 
 ## Problem Statement: 
-**Given**
+
+### Given
 
 Historical weather data from USU Climate Center that contains 33 input variables including temperature, pressure, precipitation, clear sky radiation, humidity, etc.
 
@@ -14,7 +15,7 @@ Month and day of year encoded as coordinates
 
 Solar Production data
 
-**Find**
+### Find 
 
 Average energy generated (KW) in the next hour, using data from 100 KW grid from Aspire labs for fitting
 
@@ -42,8 +43,5 @@ Splitting the model into seasons helped model have better generalization results
 
 Table 1 shows a summary of error using Random Forests.
 <p align="center">
-<img src='images/Table1.png'>
+<img src='images/table1.png'>
 </p>
-
-
-
