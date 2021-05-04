@@ -30,7 +30,7 @@ The energy production of the solar panels maintained by Aspire labs is constantl
 The USU climate center keeps a detailed record of historically observed weather and is publicaly available. The input data was also supplemented by the Azimuth and Elevation angles of the sun at each timestep. These angles were calculated using the <a href='https://github.com/bradley-p/Solar_Energy_Forecasting/tree/main/src'>Astral</a> package 
 
 ## Methods:
-A variety of Machine learning approaches have been applied. The results can be found in the <a href='https://github.com/bradley-p/Solar_Energy_Forecasting/tree/main/src'> src</a> folder
+A variety of Machine learning approaches have been applied. The results can be replicated using the files in the  <a href='https://github.com/bradley-p/Solar_Energy_Forecasting/tree/main/src'> src</a> folder
 
 <p align="center">
 <img src='images/methods.png'>
